@@ -6,34 +6,34 @@ The system retrieves patient data from a public API, handles unreliable response
 
 ---
 
-## 🚀 Features & Highlights
+## Features & Highlights
 
-- ✅ **Robust API Fetching** with retry logic for `500`, `503`, and `429` errors
-- ✅ **Pagination Handling** (50 total patients across 10 pages)
-- ✅ **Risk Calculation**:
+-  **Robust API Fetching** with retry logic for `500`, `503`, and `429` errors
+-  **Pagination Handling** (50 total patients across 10 pages)
+-  **Risk Calculation**:
   - **Blood Pressure** (Normal → Stage 2)
   - **Temperature** (Normal to High Fever)
   - **Age** category scoring
-- ✅ **Error Detection** for invalid/missing fields
-- ✅ **Three Alert Categories** submitted:
+-  **Error Detection** for invalid/missing fields
+-  **Three Alert Categories** submitted:
   - `high_risk_patients` (total score ≥ 4)
   - `fever_patients` (temp ≥ 99.6°F)
   - `data_quality_issues` (malformed or missing fields)
-- ✅ **Low-resource, efficient, clean code** using modern TypeScript
+-  **Low-resource, efficient, clean code** using modern TypeScript
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 📦 assessment.ksensetech/
-├── 📄 riskAssessment.ts   # Main assessment logic and submission
-└── 📄 README.md           # You're reading it now!
+├── riskAssessment.ts   # Main assessment logic and submission
+└── README.md           # You're reading it now!
 ```
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 Follow these steps to run the code locally:
 
@@ -103,7 +103,7 @@ This solution uses the KSenseTech assessment API:
 
 ## 📤 What Gets Submitted?
 
-Your solution automatically submits 3 critical lists:
+My solution automatically submits 3 critical lists:
 
 ```json
 {
